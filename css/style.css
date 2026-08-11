@@ -1,0 +1,69 @@
+body {
+  background-color: #dedede;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  padding: 10px;
+}
+
+ul {
+  text-align: left;
+}
+
+div {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.label {
+  text-align: center;
+}
+
+/* Tablet view: two divs per row. */
+@media screen and (min-width: 772px) {
+  div {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  img {
+    max-height: 30vh;
+    object-fit: contain;
+  }
+}
+
+/* Large-screen view: three divs per row. */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30%;
+  }
+}
